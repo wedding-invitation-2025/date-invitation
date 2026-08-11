@@ -78,6 +78,41 @@ color:white;
     }
 
 }
+    .main-photo-box{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.center-photo{
+    display:block;
+    width:100%;
+    max-width:500px;
+    height:auto;
+    aspect-ratio:4 / 3;
+    object-fit:cover;
+    border-radius:25px;
+}
+
+    @media(max-width:700px){
+
+    .main-photo-box{
+        width:100%;
+        padding:0 5px;
+    }
+
+    .center-photo{
+        width:100%;
+        max-width:100%;
+        height:auto;
+        aspect-ratio:4 / 3;
+        object-fit:cover;
+        border-radius:22px;
+    }
+
+}
 canvas{
 
 position:fixed;
@@ -806,14 +841,11 @@ document.getElementById("card").innerHTML = `
 
     <!-- ԿԵՆՏՐՈՆԱԿԱՆ ՆԿԱՐ -->
 
-    <div class="main-photo-box">
+  <div class="main-photo-box">
 
-       <img src="https://i.postimg.cc/Pf2fnrP4/4.jpg" height="250px"style="margin-left: -15px; margin-top: 5px; border-radius: 10%;">
-      
+    <img src="https://i.postimg.cc/Pf2fnrP4/4.jpg" class="center-photo">
 
-
-
-    </div>
+</div>
 
 
 
